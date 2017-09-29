@@ -1,0 +1,11 @@
+{% if Species_list %}
+  <ul>
+    {% for species in Species_list %}
+      <li><a href="/bfly/{{ Scientific_Name }}/">{{ Scientific_Name }} </a>
+
+  </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+      <p> No species are avalible.</p>
+  {% endif %}
